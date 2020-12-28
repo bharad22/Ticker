@@ -52,7 +52,7 @@ export default {
   methods: {
     callFunction: function () {
       
-      axios.get(`https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a63df650cbf2439a95fee0f95da0aea0`)
+      axios.get(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a63df650cbf2439a95fee0f95da0aea0`)
       .then(response => {
       console.log(response.data.articles)
       this.news = response.data.articles
