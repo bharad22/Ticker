@@ -95,6 +95,7 @@ export default {
       border: solid #06f8c0;
       color:  #06f8c0;
       font-size: 30px;
+      cursor: pointer;
       
   }
   .brtn:hover{
