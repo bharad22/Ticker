@@ -130,7 +130,7 @@ export default {
       border-bottom-left-radius: 0px;
       background-color: grey;
       color: white;
-      height: 50px;
+      height: 55px;
       width: 100px;
 
         font-size: 25px;
@@ -190,9 +190,10 @@ background-color: #0a192f
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 
-  font-size: 25px;
+  font-size: 20px;
   color: #64ffda;
   width: 60%;
+  height: 50px;
   
   
     
@@ -201,13 +202,27 @@ background-color: #0a192f
     background-color: #0a192f;
   }
   
-  @media only screen and(max-width:600px){
+  @media only screen and (max-width: 650px){
     .card{
       width: 95%;
     }
     .bi{
       font-size: 60px;
     }
+    .serch{
+      border: groove #06f8c0;
+      border-radius: 100px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+
+      font-size: 25px;
+      color: #64ffda;
+      width: 60%;
+      height: 45px;
+  
+    
+  }
+
 
   }
 </style>

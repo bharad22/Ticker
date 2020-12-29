@@ -21,7 +21,7 @@
          
         
     <div v-for="(i,index) in news" :key="index">
-        <div class="card border-dark mb-3">
+        <div class="card border-dark">
             <div class="card-header">
                 <h2><b>{{i.title}}</b></h2><br>
             </div>
@@ -71,10 +71,11 @@ export default {
   background-color: #0a192f;
   min-height: 100vh;
 }
-    .card{
-        margin: 100px 100px 100px 100px;
+    .card[data-v-25603163]{
+        margin: 100px auto 100px auto;
         border: solid  #06f8c0;;
         border-radius: 40px;
+        max-width: 95%;
     }
     .card:hover{
 
@@ -150,15 +151,18 @@ export default {
     position: sticky;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     top: 0px;
+    z-index: 1;
 
   }
   .card-header{
     background-color: #0e2b55;
     color: #06f8c0 ;
     border: solid #06f8c0 ;
+   
   }
     .card-body{
       border: solid #06f8c0 ;
+      
   }
   .nb{
     display: flex;
@@ -179,11 +183,7 @@ export default {
     .btn{
       width: 95%;
     }
-    .card{
-      width: 100%;
-      font-size: 10px;
-      margin: 10px!important;
-    }
+
       #nb{
     display: flex;
     justify-content: center;
@@ -195,8 +195,8 @@ export default {
    margin: auto;
    margin-top: 200px;
       }
-        .brtn{
-     width: 90%!important;
+    .brtn{
+      width: 90%!important;
       padding-bottom: 50px;
       background-color:  #0a192f;
       border-radius: 20px;
