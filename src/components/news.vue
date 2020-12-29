@@ -71,7 +71,7 @@ export default {
   background-color: #0a192f;
   min-height: 100vh;
 }
-    .card[data-v-25603163]{
+    .card{
         margin: 100px auto 100px auto;
         border: solid  #06f8c0;;
         border-radius: 40px;
