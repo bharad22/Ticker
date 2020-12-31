@@ -52,16 +52,14 @@ export default {
   methods: {
     callFunction: function () {
       
-      axios.get(`http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=11f12b3f9682459d8c90cce287e6f834`)
-      .then(response => {
-      console.log(response.data)
-      this.news = response.data.articles
-    }).catch(err => {
-      console.log(err)
-    })
+      axios.post(`http://localhost:5000/`)
+      .then(res=>{this.news=res.data.articles}
+        
+      )
     document.getElementById("nb").style.display="none"
-  }
-    }
+
+
+    }}
 }
 
 </script>
