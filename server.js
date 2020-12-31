@@ -1,10 +1,10 @@
-var express = require('express');
-var axios=require('axios');
-var cors = require('cors');
+const express = require('express');
+const axios=require('axios');
+const cors = require('cors');
 var history = require('connect-history-api-fallback');
 var path = require('path');
 var serveStatic = require('serve-static');
-app = express();
+const app = express();
 app.use(cors())
 app.use(history({verbose: true}))
 app.use(serveStatic(path.join(__dirname, '/dist')))
