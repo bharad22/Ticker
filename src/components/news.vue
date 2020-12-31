@@ -52,7 +52,7 @@ export default {
   methods: {
     callFunction: function () {
       
-      axios.post(`http://ticker0.herokuapp.com/news/`)
+      axios.post(`http://localhost:5000/`)
       .then(res=>{this.news=res.data.articles}
         
       )
